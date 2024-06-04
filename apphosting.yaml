@@ -1,0 +1,81 @@
+
+# Environment variables and secrets
+env:
+  - variable: FIREBASE_PROJECT_ID
+    value: harmonyhive-b4705
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: FIREBASE_CLIENT_EMAIL
+    value: firebase-adminsdk-atskh@harmonyhive-b4705.iam.gserviceaccount.com
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: FIREBASE_PRIVATE_KEY
+    secret: myFirebasePrivateKeySecret
+
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    value: AIzaSyCnh7tVOkW4UsvrqTEDtJPVRlryIibSb1s
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: harmonyhive-b4705.firebaseapp.com
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    value: harmonyhive-b4705.appspot.com
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    value: 41274838584
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_APP_ID
+    value: 1:41274838584:web:cdd0eb6e06deb0f0af60cd
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: G-E2XH6TESCR
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXTAUTH_SECRET
+    value: c2d373e9091ad83b43b2212684c4794b
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: NEXTAUTH_URL
+    value: http://localhost:3000/
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: GOOGLE_CLIENT_ID
+    value: 41274838584-680c8sgq16fojgeq7nla5j6foioqq46p.apps.googleusercontent.com
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: GOOGLE_CLIENT_SECRET
+    secret: myGoogleClientSecret
+
+secrets:
+  - name: myFirebasePrivateKeySecret
+    value: -----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5E0yoVU5YssI6\nPrI7mpfE9Yxrf/pqEXvPmrg2R5fkEgWl7GlSu6Gwueu9SdDZBOrP6UxPfUWore4u\ntBOR+VVjASU4WJNAg8m+uy9DbpDmGOWEhHEf4jd1bJ9L2SDTgnJVrzMF+5gh3chr\nwoyhaP8BgD2a5K10wrugHpBU+ACxFSCukdweDBortiK2OEV6VFTyoDBNzc3fSy7a\nVGcE0g4tDL5wBZXxm3jU2s/iegTytE36dEqUQHFQxE3FXFmgcqXYC7QZP2aB3u6i\nulvhJEBpntkwuTZdMjsOnURDTQMayT+BsKGceLksdhFCYmLMmSEGq8o5imDNzKnr\naBB1tpfZAgMBAAECgf8jxGsbtbOIVFkLosnW/keCbn2n0e0UjXM73RJIaJqVEbVv\...
+
+  - name: myGoogleClientSecret
+    value: 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
